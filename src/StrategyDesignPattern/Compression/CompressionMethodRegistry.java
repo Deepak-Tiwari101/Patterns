@@ -2,6 +2,7 @@ package StrategyDesignPattern.Compression;
 
 import StrategyDesignPattern.Compression.CompressionMethod._7zip;
 import StrategyDesignPattern.Compression.CompressionMethod._Rar;
+import StrategyDesignPattern.Compression.CompressionMethod._Tar;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ public class CompressionMethodRegistry {
     public CompressionMethodRegistry() {
         register("7zip", new _7zip());
         register("rar", new _Rar());
+        register("tar", new _Tar());
     }
     public void register(String input, ICompressionStrategy strategy) {
         strategies.put(input, strategy);
