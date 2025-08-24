@@ -1,1 +1,1 @@
-Pattern practice
+Design Patterns practice
